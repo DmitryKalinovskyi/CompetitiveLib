@@ -127,13 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="binary_exp.cpp" />
     <ClCompile Include="CompetetiveCollection.cpp" />
+    <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="matrix_exp.cpp" />
+    <ClCompile Include="primality_test.cpp" />
+    <ClCompile Include="sieve.cpp" />
+    <ClCompile Include="sparse_table.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binary_exp.hpp" />
+    <ClInclude Include="matrix.hpp" />
+    <ClInclude Include="matrix_exp.hpp" />
     <ClInclude Include="primality_test.hpp" />
     <ClInclude Include="prime_factorization.hpp" />
     <ClInclude Include="sieve.hpp" />
+    <ClInclude Include="sparse_table.hpp" />
+    <ClInclude Include="vector_ext.cpp" />
     <ClInclude Include="vector_ext.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

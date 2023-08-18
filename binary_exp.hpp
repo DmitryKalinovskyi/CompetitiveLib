@@ -8,13 +8,13 @@ namespace number_theory {
 	/// <param name="number"></param>
 	/// <param name="step"></param>
 	/// <returns></returns>
-	int binpow(int number, int step) {
-		if (step == 0)
-			return 1;
+	int binpow(int number, int step);
 
-		if (step % 2)
-			return number * binpow(number, step - 1);
-
-		return binpow(number * number, step / 2);
-	}
+	/// <summary>
+	/// return [number] in power of [step] by modulo [mod]
+	/// </summary>
+	/// <param name="number"></param>
+	/// <param name="step"></param>
+	/// <returns></returns>
+	int binpowmod(int number, int step, int mod);
 }

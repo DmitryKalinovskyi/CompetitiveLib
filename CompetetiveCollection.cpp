@@ -1,13 +1,9 @@
 ﻿#include <iostream>
-#include "binary_exp.hpp"
-#include "primality_test.hpp"
-#include "sieve.hpp"
+#include "sparse_table.hpp"
 #include "vector_ext.hpp"
-#include "prime_factorization.hpp"
 
 using namespace std;
 using namespace ext;
-using namespace number_theory;
 
 inline string pr(bool b)
 {
@@ -16,6 +12,17 @@ inline string pr(bool b)
 
 int main()
 {
+	//vector<int> nums{ 1,3,-1,-3,5,3,6,7 };
+	vector<int> nums{ 1,3 };
+	int k = 2;
+	range_queries::SparseTable table(nums);
+
+	vector<int> ans(nums.size() - k + 1);
+
+	for (int i = 0; i < ans.size(); i++) {
+		ans[i] = table.AnswerQuery(i, i + k - 1);
+	}
+
 	//const int sieve_size = 2000;
 	//Sieve s(sieve_size);
 
@@ -29,7 +36,5 @@ int main()
 		if (s[i] != isPrime(i))
 			cout << "Mismatch founded: sieve expected that " << i << " is " << pr(s[i]) << "\nbut primality check function expected " << pr(isPrime(i)) << endl;
 	}*/
-
-	cout << factorize(18);
 }
 

@@ -22,10 +22,31 @@
     <Filter Include="Source Files\extensions\vector extensions">
       <UniqueIdentifier>{fe66b90b-48d6-4c92-a9c5-753201eb4d66}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\range queries">
+      <UniqueIdentifier>{b8c5a19f-cf2e-4821-aa53-9117cc627e1c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CompetetiveCollection.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="binary_exp.cpp">
+      <Filter>Source Files\number theory</Filter>
+    </ClCompile>
+    <ClCompile Include="primality_test.cpp">
+      <Filter>Source Files\number theory</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix.cpp">
+      <Filter>Source Files\number theory</Filter>
+    </ClCompile>
+    <ClCompile Include="sieve.cpp">
+      <Filter>Source Files\number theory</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix_exp.cpp">
+      <Filter>Source Files\number theory</Filter>
+    </ClCompile>
+    <ClCompile Include="sparse_table.cpp">
+      <Filter>Source Files\range queries</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -38,11 +59,23 @@
     <ClInclude Include="sieve.hpp">
       <Filter>Source Files\number theory</Filter>
     </ClInclude>
-    <ClInclude Include="vector_ext.hpp">
+    <ClInclude Include="vector_ext.cpp">
       <Filter>Source Files\extensions\vector extensions</Filter>
     </ClInclude>
     <ClInclude Include="prime_factorization.hpp">
       <Filter>Source Files\number theory</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix_exp.hpp">
+      <Filter>Source Files\number theory</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.hpp">
+      <Filter>Source Files\number theory</Filter>
+    </ClInclude>
+    <ClInclude Include="sparse_table.hpp">
+      <Filter>Source Files\range queries</Filter>
+    </ClInclude>
+    <ClInclude Include="vector_ext.hpp">
+      <Filter>Source Files\extensions\vector extensions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
