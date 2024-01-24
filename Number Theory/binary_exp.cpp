@@ -1,5 +1,6 @@
 namespace number_theory {
-	int binpow(int number, int step) {
+	template<typename A, typename B>
+	A binpow(A number, B step) {
 		if (step == 0)
 			return 1;
 
@@ -9,13 +10,15 @@ namespace number_theory {
 		return binpow(number * number, step / 2);
 	}
 
-	int binpowmod(int number, int step, int mod) {
+
+	template<typename A, typename B, typename C>
+	A binpowmod(A number, B step, C mod) {
 		if (step == 0)
 			return 1;
 
 		if (step % 2)
 			return (number * binpow(number, step - 1)) % mod;
 
-		return binpow((number *1ll* number % mod), step / 2);
+		return binpow((number * number % mod), step / 2);
 	}
 }

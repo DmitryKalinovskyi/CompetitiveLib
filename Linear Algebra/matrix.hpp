@@ -1,7 +1,7 @@
 #include <vector>
 #include <stdexcept>
 
-namespace number_theory {
+namespace linear_algebra {
 	template<typename T>
 	class Matrix2D {
 	public:
@@ -14,13 +14,13 @@ namespace number_theory {
 		/// Return unit matrix by given matrix instance
 		/// </summary>
 		/// <returns>Unit matrix</returns>
-		Matrix2D<T> Identity();
+		Matrix2D<T> identity();
 
 		/// <summary>
 		/// Check whether matrix is square
 		/// </summary>
 		/// <returns>matrix is square or not</returns>
-		bool IsSquare();
+		bool is_square();
 
 		Matrix2D<T> operator* (Matrix2D<T>& other);
 		std::vector<T> operator[] (size_t i);

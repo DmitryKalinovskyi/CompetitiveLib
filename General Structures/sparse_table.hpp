@@ -12,7 +12,7 @@ namespace range_queries {
 		// TODO: add predicate to the class constructor
 		SparseTable(std::vector<int> data);
 
-		int AnswerQuery(int a, int b);
+		int answer_query(int a, int b);
 	};
 }
 

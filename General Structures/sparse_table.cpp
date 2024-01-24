@@ -24,7 +24,7 @@ namespace range_queries{
 		}
 	}
 
-	int SparseTable::AnswerQuery(int a, int b) {
+	int SparseTable::answer_query(int a, int b) {
 		int len = b - a + 1;
 
 		//index of the hightest bit in a number 

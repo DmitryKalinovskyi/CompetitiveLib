@@ -25,7 +25,7 @@ namespace number_theory {
 		/// </summary>
 		/// <param name="n"></param>
 		/// <returns></returns>
-		bool IsPrime(int n);
+		bool is_prime(int n);
 
 		/// <summary>
 		/// Check whether is specified number is prime or not (short hand version)
@@ -40,7 +40,7 @@ namespace number_theory {
 		/// <param name="from"></param>
 		/// <param name="to"></param>
 		/// <returns></returns>
-		std::vector<int> PrimesInRange(int from, int to);
+		std::vector<int> primes_in_range(int from, int to);
 	};
 }
 

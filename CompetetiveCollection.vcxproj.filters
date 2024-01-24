@@ -48,6 +48,9 @@
     <ClCompile Include="sparse_table.cpp">
       <Filter>Source Files\range queries</Filter>
     </ClCompile>
+    <ClCompile Include="Graph\dsu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="primality_test.hpp">
@@ -76,6 +79,9 @@
     </ClInclude>
     <ClInclude Include="vector_ext.hpp">
       <Filter>Source Files\extensions\vector extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\dsu.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

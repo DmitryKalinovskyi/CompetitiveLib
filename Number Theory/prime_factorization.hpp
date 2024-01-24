@@ -3,7 +3,7 @@
 namespace number_theory {
 
 	/// <summary>
-	/// Simple factorization function that return all factors
+	/// Simple factorization function that return all factors. Time complexity O(sqrt(N)).
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	/// <param name="num"></param>

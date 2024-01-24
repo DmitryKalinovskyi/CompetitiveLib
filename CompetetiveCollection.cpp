@@ -1,9 +1,10 @@
 ﻿#include <iostream>
-#include "sparse_table.hpp"
-#include "vector_ext.hpp"
+#include "Extensions/vector_ext.hpp"
+#include "Number Theory/binary_exp.hpp"
+#include "Number Theory/primality_test.hpp"
 
 using namespace std;
-using namespace ext;
+using namespace extensions;
 
 inline string pr(bool b)
 {
@@ -12,8 +13,9 @@ inline string pr(bool b)
 
 int main()
 {
+	cout << number_theory::isPrime(10) << endl;
 	//vector<int> nums{ 1,3,-1,-3,5,3,6,7 };
-	vector<int> nums{ 1,3 };
+	/*vector<int> nums{ 1,3 };
 	int k = 2;
 	range_queries::SparseTable table(nums);
 
@@ -21,7 +23,7 @@ int main()
 
 	for (int i = 0; i < ans.size(); i++) {
 		ans[i] = table.AnswerQuery(i, i + k - 1);
-	}
+	}*/
 
 	//const int sieve_size = 2000;
 	//Sieve s(sieve_size);

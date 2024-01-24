@@ -4,7 +4,7 @@
 #include <vector>
 #include <ostream>
 
-namespace ext {
+namespace extensions {
 
 	/// <summary>
 	/// Overload the outstream << operator for the l-value vector<T>, T also should be overloaded

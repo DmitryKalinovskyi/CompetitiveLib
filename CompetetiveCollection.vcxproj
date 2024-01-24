@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="binary_exp.cpp" />
     <ClCompile Include="CompetetiveCollection.cpp" />
+    <ClCompile Include="Graph\dsu.cpp" />
     <ClCompile Include="matrix.cpp" />
     <ClCompile Include="matrix_exp.cpp" />
     <ClCompile Include="primality_test.cpp" />
@@ -137,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binary_exp.hpp" />
+    <ClInclude Include="Graph\dsu.h" />
     <ClInclude Include="matrix.hpp" />
     <ClInclude Include="matrix_exp.hpp" />
     <ClInclude Include="primality_test.hpp" />
